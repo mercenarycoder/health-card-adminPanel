@@ -1,0 +1,84 @@
+.register {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 0;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .register {
+    grid-template-columns: 1fr;
+  }
+}
+.register__logo-1 {
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container_register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parallel {
+  display: flex;
+  justify-content: center;
+}
+.form_register {
+  display: grid;
+  grid-template-columns: [start] max-content [mid] max-content [end];
+  justify-content: start;
+  grid-gap: 2rem 0;
+  align-items: center;
+}
+.part_register_1 {
+  grid-column: start / mid;
+  margin-right: 2rem;
+}
+.part_register_2 {
+  grid-column: mid / end;
+}
+.part_register {
+  grid-column: start / end;
+  width: 93%;
+}
+.heading_register {
+  color: #131125;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.special {
+  width: 100%;
+}
+.special2{
+  width: 95%;
+}
+.extern-type {
+  position: absolute;
+  float: right;
+  text-align: right;
+  left: 8.5em;
+  font-size: 12px;
+  display: block;
+  color: #b5b5b5;
+}
+.toggle-input{
+  width: auto;
+  padding-right:1rem;
+}
+.info{
+  color: #131125;
+  font-size: 1.4rem;
+  margin: 2rem 2rem;
+  font-weight: 600;
+}
+
